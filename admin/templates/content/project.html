@@ -1,0 +1,13 @@
+	<div class="project-item">
+		<perch:content id="project" type="albumlist" label="Project" suppress="true" />
+		<a href="../projects/project.php?s=<perch:content id="project" type="slug" for="albumSlug">">
+			<div class="project-image">
+				<img src="<perch:content id="projectTitleImage" type="image" label="Project Title Image" required>" >
+			</div>
+			<h4 class="project-title-year"><perch:content id="projectYear" type="text" label="Project Year" required></h4>
+			<div class="project-title-bar">
+				<h2 class="project-title-text"><perch:content id="title" type="text" label="Project Title" required title></h2>
+				<h3 class="project-title-student"><perch:content id="studentName" type="text" label="Student Name" required></h3>
+			</div>
+		</a>
+	</div>

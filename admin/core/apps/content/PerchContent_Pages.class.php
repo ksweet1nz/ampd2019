@@ -695,8 +695,9 @@ class PerchContent_Pages extends PerchFactory
 
         if ($link_only) {
 
-            $data['pagePath'] = $url;
+            $data['pagePath']    = $url;
             $data['pageNavOnly'] = '1';
+            $data['templateID']  = 0;
 
             // Insert into the DB
             $Page =  $this->create($data);

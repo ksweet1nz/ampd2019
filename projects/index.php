@@ -10,12 +10,13 @@
 	<?php perch_layout('global/home-menu', [
     'menu-class' => 'main-nav',
   ]); ?>
-
-  	<div class="project-grid">
+  <div class="wrapper">
+  	<div class="auto-grid">
   		<?php
   			perch_content('Project');
   		?>
-	 </div>
+	  </div>
+  </div>
 
    <?php perch_layout('global/footer'); ?>
 </body>

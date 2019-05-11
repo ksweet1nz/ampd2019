@@ -301,7 +301,9 @@ class PerchEmail
                 }
             }
 
-            switch(strtolower(PERCH_EMAIL_METHOD)) {
+            $sendMethod = strtolower(PERCH_EMAIL_METHOD);
+
+            switch($sendMethod) {
                 case 'sendmail':
                     $mail->IsSendmail();
                     $LogMessage->sent_by = 'sendmail';
@@ -329,16 +331,25 @@ class PerchEmail
                     break;
             }
 
-            if (!$mail->Send()) {
-                PerchUtil::debug($mail->ErrorInfo, 'error');
-                return false;
-            }else{
-                PerchUtil::debug('Sent email: "'.$this->subject().'" to '.implode(', ', $debug_recipients), 'success');
+            if ($sendMethod == 'api') {
 
                 $Perch = Perch::fetch();
                 $Perch->event('email.send', $LogMessage);
                 return true;
+
+            } else {
+                if (!$mail->Send()) {
+                    PerchUtil::debug($mail->ErrorInfo, 'error');
+                    return false;
+                }else{
+                    PerchUtil::debug('Sent email: "'.$this->subject().'" to '.implode(', ', $debug_recipients), 'success');
+    
+                    $Perch = Perch::fetch();
+                    $Perch->event('email.send', $LogMessage);
+                    return true;
+                }
             }
+            
 
         }catch (phpmailerException $e) {
             $this->errors .= $e->errorMessage();

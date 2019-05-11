@@ -459,20 +459,5 @@
     "Editing Collection Options": "Editing Collection Options",
     "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.": "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.",
     "This option deletes all content from this collection.": "This option deletes all content from this collection.",
-    "Delete all content from this collection immediately": "Delete all content from this collection immediately",
-    "No content yet?": "No content yet?",
-    "Make sure you have added some editable regions into your page, and then visited that page in your browser. Once you have, the regions should show up here.": "Make sure you have added some editable regions into your page, and then visited that page in your browser. Once you have, the regions should show up here.",
-    "Read the getting started guide to find out more": "Read the getting started guide to find out more",
-    "Your resources folder is not writable. Make this folder (%s) writable if you want to upload a custom logo.": "Your resources folder is not writable. Make this folder (%s) writable if you want to upload a custom logo.",
-    "%s%s is up to date%s": "%s%s is up to date%s",
-    "%sResources folder is not writable%s": "%sResources folder is not writable%s",
-    "Remove image": "Remove image",
-    "Menu successfully rebuilt": "Menu successfully rebuilt",
-    "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:": "To configure tasks to run, you first need to set a %ssecret%s. This is just a code word to stop tasks being run accidentally. Choose a secret (e.g. %scarbonara%s) and add it to your %sconfig\/config.php%s file like this:",
-    "Do that now, then reload this page. Don't use %scarbonara%s.": "Do that now, then reload this page. Don't use %scarbonara%s.",
-    "Home page": "Home page",
-    "Markdown formatting": "Markdown formatting",
-    "Sorry, your license key isn't valid for this domain.": "Sorry, your license key isn't valid for this domain.",
-    "Move the page to this location": "Move the page to this location",
-    "Subpage folder": "Subpage folder"
+    "Delete all content from this collection immediately": "Delete all content from this collection immediately"
 }

@@ -28,7 +28,7 @@
         CREATE TABLE IF NOT EXISTS `__PREFIX__content_locks` (
           `lockID` int(10) unsigned NOT NULL AUTO_INCREMENT,
           `contentKey` char(64) NOT NULL DEFAULT '',
-          `userID` int(10) unsigned DEFAULT NULL,
+          `userID` char(128) DEFAULT NULL,
           `lockTime` datetime DEFAULT NULL,
           PRIMARY KEY (`lockID`),
           KEY `idx_key` (`contentKey`),
@@ -52,6 +52,7 @@
 
       $sql .= "ALTER TABLE `__PREFIX__collections` ADD `collectionPublishRoles` VARCHAR(255)  NOT NULL  DEFAULT '*'  AFTER `collectionEditRoles`;";
 
+      $sql .= "ALTER TABLE `__PREFIX__content_locks` CHANGE `userID` `userID` CHAR(128)  NULL  DEFAULT NULL;"; 
 
     }
 
@@ -89,6 +90,8 @@
 
 
     $sql .= "ALTER TABLE `__PREFIX__pages` CHANGE `pageCreatorID` `pageCreatorID` CHAR(255)  NOT NULL  DEFAULT '0';";
+
+
 
 
 	$sql = str_replace('__PREFIX__', PERCH_DB_PREFIX, $sql);

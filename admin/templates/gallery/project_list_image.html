@@ -1,5 +1,5 @@
 <perch:before>
-<div class="project-grid">
+<div class="auto-grid">
 	<div class="project-item project-title-intro">
 		<h1><perch:gallery id="albumTitle" /></h1>
 		<perch:gallery id="description" type="textarea" markdown />
@@ -7,7 +7,10 @@
 </perch:before>
 	<div class="project-item">
 		<a href="<perch:gallery id="main"  />">
-			<img src="<perch:gallery id="square" />" alt="<perch:gallery id="imageAlt" />" />
+			<img src="<perch:gallery id="square" />" />
+			<div class="project-title-bar fade-in">
+				<h3 class="project-title-text"><perch:gallery id="imageAlt" </h3>
+			</div>
 		</a>
 	</div>
 <perch:after>

@@ -10,14 +10,14 @@ class PerchFieldType
     /**
      * The form object the field is used with
      *
-     * @var object
+     * @var object|false
      */
     protected $Form = false;
 
     /**
      * The tag object for the field
      *
-     * @var object
+     * @var object|false
      */
     protected $Tag = false;
 
@@ -25,7 +25,7 @@ class PerchFieldType
     /**
      * The field ID used with setting the required validation
      *
-     * @var string
+     * @var string|false
      */
     protected $required_id = false;
 
@@ -33,7 +33,7 @@ class PerchFieldType
     /**
      * A unique ID for using when e.g. outputting unique elements to the HTML
      *
-     * @var string
+     * @var string|false
      */
     protected $unique_id = false;
 
@@ -41,7 +41,7 @@ class PerchFieldType
     /**
      * The un-processed item
      *
-     * @var array
+     * @var array|string|false
      */
     protected $raw_item = false;
 
@@ -49,7 +49,7 @@ class PerchFieldType
     /**
      * All the tags from the template
      *
-     * @var array
+     * @var array|false
      */
     protected $sibling_tags = false;
 
@@ -63,7 +63,7 @@ class PerchFieldType
 
     /**
      * The ID of the app in use
-     * @var string
+     * @var string|false
      */
     public $app_id = false;
 
@@ -174,7 +174,7 @@ class PerchFieldType
             $size = $this->Tag->size();
         }
 
-        $copy_atts = ['placeholder', 'autocomplete', 'autofill'];
+        $copy_atts = ['placeholder', 'autocomplete', 'autofill', 'pattern'];
 
         foreach($copy_atts as $att) {
             if ($this->Tag->is_set($att)) {

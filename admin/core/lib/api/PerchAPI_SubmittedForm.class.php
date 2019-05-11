@@ -157,9 +157,11 @@ class PerchAPI_SubmittedForm
                                         // step
                                         $min = 0;
                                         if ($Tag->is_set('min')) $min = (float)$Tag->min();
-                                        if ($Tag->step() && strtolower($Tag->step())!='any' && ($val-$min)%(float)$Tag->step()>0) {
-                                            $valid = false;
-        			                        $Perch->log_form_error($this->formID, $Tag->id(), 'format');
+                                        if ($Tag->step() && strtolower($Tag->step())!='any') {
+                                            if ($val-$min !==0 && ($val-$min)%(float)$Tag->step()>0) {
+                                                $valid = false;
+            			                        $Perch->log_form_error($this->formID, $Tag->id(), 'format');
+                                            }                                        
                                         }
 
         			                }else{

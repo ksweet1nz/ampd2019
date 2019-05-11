@@ -1,6 +1,6 @@
 <?php
 
-class PerchAPI_ContentCollection
+class PerchAPI_ContentRegion
 {	
 	private $Collection;
 
@@ -11,6 +11,7 @@ class PerchAPI_ContentCollection
 
 	public function query($opts)
 	{
+		die('Not implemented.');
 		$key = $this->Collection->collectionKey();
 
 		$opts['skip-template'] = true;

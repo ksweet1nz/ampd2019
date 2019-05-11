@@ -157,6 +157,17 @@ footer p {
 	color: darken($popColor2, 15%);
 }
 
+.project-title-type {
+	position: absolute;
+	top: 9%;
+	right: 3%;
+	z-index: 12;
+	font-size: .7em;
+	text-transform: uppercase;
+	padding: 0;
+	color: darken($popColor2, 15%);
+}
+
 .project-title-intro {
     background-color: darken($popColor2, 15%);
     min-height: 15rem;

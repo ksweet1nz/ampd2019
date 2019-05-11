@@ -37,4 +37,4 @@
 
     define('PERCH_HTML5', true);
     define('PERCH_RWD', true);
-    define('PERCH_DEBUG', true);
+    // define('PERCH_DEBUG', true);

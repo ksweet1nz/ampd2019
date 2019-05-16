@@ -1,0 +1,15 @@
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #000;
+    height: 3em;
+    z-index: 13;
+    border-top: 1px solid lighten($popColor, 30%);
+}
+footer p {
+    color: $gray;
+    font-size: .75em;
+    padding-left: 2em;
+    padding-top: 1.3em;
+}

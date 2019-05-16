@@ -10,10 +10,10 @@
 	<?php perch_layout('global/home-menu', [
     'menu-class' => 'main-nav home-menu',
   ]); ?>
-  	<div class="basic-container">
+  	<div class="wrapper">
 		<div>
 			<video autoplay loop>
-				<source src="../images/about.webm" type="video/webm">
+				<source src="../assets/images/about.webm" type="video/webm">
 				Please upgrade your browser to watch videos.
 			</video>
 		</div>

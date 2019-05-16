@@ -6,7 +6,7 @@
     switch($http_host)
     {
       case('ampd.lan') :
-        define("PERCH_DB_USERNAME", 'ampduser');
+        define("PERCH_DB_USERNAME", 'webadmin');
         define("PERCH_DB_PASSWORD", '3dsmax09');
         define("PERCH_DB_SERVER", "localhost");
         define("PERCH_DB_DATABASE", "ampd_2019");

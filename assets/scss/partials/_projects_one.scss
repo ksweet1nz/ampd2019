@@ -1,0 +1,55 @@
+.album-item {
+    position: relative;
+    overflow: hidden;
+    background-color: $black;
+    img {
+        max-width: 100%;
+        display: block;
+        opacity: .7;
+        transition: opacity .2s;
+    }
+}
+
+.album-item:hover img {
+    opacity: 1;
+}
+
+.album-title-intro {
+    background-color: darken($popColor2, 15%);
+    min-height: 15rem;
+    h1 {
+        margin: 0 4%;
+        font-size: 1.65em;
+        font-weight: 500;
+        color: lighten($mainTextColor, 35%);
+    }
+
+    p {
+        margin: 0 5%;
+        font-size: .9em;
+        font-family: $mainFont;
+        color: lighten($mainTextColor, 35%);
+    }
+}
+
+.album-item-title {
+    position: absolute;
+    bottom: 5%;
+    right: 3%;
+    opacity: 0;
+    transition: opacity .2s;
+}
+
+.album-item-title a {
+    color: $popColor;
+}
+
+.album-item:hover .album-item-title {
+    opacity: 1;
+}
+
+@media all and (min-width: 575px) {
+    .album-title-intro {
+        grid-column: span 2;
+    }
+}

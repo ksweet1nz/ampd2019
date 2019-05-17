@@ -1,0 +1,17 @@
+/* GRID LAYOUT ----------------------------------------------------------------------------- */
+.wrapper {
+    max-width: 70rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 6rem 4rem;
+}
+
+
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+    display: -ms-grid;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--auto-grid-min-size), 1fr));
+    grid-auto-flow: dense;
+}
+

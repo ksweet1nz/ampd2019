@@ -459,5 +459,6 @@
     "Editing Collection Options": "Editing Collection Options",
     "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.": "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.",
     "This option deletes all content from this collection.": "This option deletes all content from this collection.",
-    "Delete all content from this collection immediately": "Delete all content from this collection immediately"
+    "Delete all content from this collection immediately": "Delete all content from this collection immediately",
+    "Markdown formatting": "Markdown formatting"
 }

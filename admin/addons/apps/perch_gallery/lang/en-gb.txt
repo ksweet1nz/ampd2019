@@ -127,5 +127,6 @@
     "Armano Papageorge": "Armano Papageorge",
     "Ethan Murray": "Ethan Murray",
     "Gerard Finch": "Gerard Finch",
-    "Louise Wotton": "Louise Wotton"
+    "Louise Wotton": "Louise Wotton",
+    "Gabriella Joyce": "Gabriella Joyce"
 }

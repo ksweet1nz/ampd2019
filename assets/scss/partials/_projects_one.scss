@@ -1,57 +1,60 @@
 .album-item {
-    position: relative;
-    overflow: hidden;
-    background-color: $black;
-    img {
-        max-width: 100%;
-        display: block;
-        opacity: .7;
-        transition: opacity .2s;
-    }
+  position: relative;
+  overflow: hidden;
+  background-color: $black;
+  img {
+    max-width: 100%;
+    display: block;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+  }
 }
 
 .album-item:hover img {
-    opacity: 1;
+  opacity: 1;
 }
 
 .album-title-intro {
-    background-color: darken($popColor2, 15%);
-    min-height: 15rem;
-    h1, h2 {
-        margin: 0 4%;
-        font-size: 1.65em;
-        font-weight: 500;
-        color: lighten($mainTextColor, 35%);
-    }
-    h2 {
-        font-size: 1.2em;
-    }
-    p {
-        margin: 0 5%;
-        font-size: .9em;
-        font-family: $mainFont;
-        color: lighten($mainTextColor, 35%);
-    }
+  background-color: darken($popColor2, 15%);
+  max-height: 25rem;
+  padding: 1rem;
+  h1,
+  h2 {
+    margin: 0 4%;
+    font-size: 1.65em;
+    font-weight: 500;
+    color: lighten($mainTextColor, 35%);
+  }
+  h2 {
+    font-size: 1.2em;
+  }
+  p {
+    margin: 0 5%;
+    padding-bottom: 1.5rem;
+    font-size: 0.9em;
+    font-family: $mainFont;
+    color: lighten($mainTextColor, 35%);
+  }
 }
 
 .album-item-title {
-    position: absolute;
-    bottom: 5%;
-    right: 3%;
-    opacity: 0;
-    transition: opacity .2s;
+  position: absolute;
+  bottom: 5%;
+  right: 3%;
+  opacity: 0;
+  transition: opacity 0.2s;
 }
 
 .album-item-title a {
-    color: $popColor;
+  color: $popColor;
 }
 
 .album-item:hover .album-item-title {
-    opacity: 1;
+  opacity: 1;
 }
 
 @media all and (min-width: 575px) {
-    .album-title-intro {
-        grid-column: span 2;
-    }
+  .album-title-intro {
+    grid-column: span 2;
+  }
 }

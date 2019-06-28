@@ -123,5 +123,9 @@
     "Mikayla Heesterman": "Mikayla Heesterman",
     "": "",
     "Glen Stricot Tarboton": "Glen Stricot Tarboton",
-    "Emily Newmarch": "Emily Newmarch"
+    "Emily Newmarch": "Emily Newmarch",
+    "Armano Papageorge": "Armano Papageorge",
+    "Ethan Murray": "Ethan Murray",
+    "Gerard Finch": "Gerard Finch",
+    "Louise Wotton": "Louise Wotton"
 }

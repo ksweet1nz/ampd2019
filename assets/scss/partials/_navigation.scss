@@ -7,15 +7,25 @@
     display: flex;
     flex-wrap: nowrap;
     width: 20%;
+    @media all and (max-width: 600px) {
+      top: 6%;
+      flex-direction: column;
+    }
+
     a {
       color: $white;
     }
+
     li:hover {
       background-color: $black;
     }
+
     li {
-      padding: .5em 2em;
+      padding: 0.5em 2em;
       background-color: $popColor;
+      @media all and (max-width: 600px) {
+        padding: 3% 10%;
+      }
     }
   }
 }
@@ -29,24 +39,32 @@
     display: flex;
     flex-wrap: nowrap;
     width: 20%;
+    @media all and (max-width: 600px) {
+      top: 3%;
+      flex-direction: column;
+    }
     a {
       color: $white;
     }
+
     li:hover {
       background-color: $black;
     }
+
     li {
-      padding: .5em 2em;
+      padding: 0.5em 2em;
       background-color: $popColor;
+      @media all and (max-width: 600px) {
+        padding: 3% 10%;
+      }
     }
   }
 }
 
-
 .drop-button {
   background-color: $popColor;
   color: $white;
-  padding: .5em 2em;
+  padding: 0.5em 2em;
 }
 
 .drop-button:hover {
@@ -63,7 +81,7 @@
   position: absolute;
   top: 2.35em;
   background-color: $black;
-  font-size: .85em;
+  font-size: 0.85em;
   z-index: 11;
 }
 

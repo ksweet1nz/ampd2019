@@ -460,5 +460,9 @@
     "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.": "Used for search results and draft previews. If you need this, enter the root-relative URL using %sbraces%s around any dynamic fields. e.g.",
     "This option deletes all content from this collection.": "This option deletes all content from this collection.",
     "Delete all content from this collection immediately": "Delete all content from this collection immediately",
-    "Markdown formatting": "Markdown formatting"
+    "Markdown formatting": "Markdown formatting",
+    "Remove image": "Remove image",
+    "%s%s is up to date%s": "%s%s is up to date%s",
+    "Reorder Region": "Reorder Region",
+    "Item orders successfully updated.": "Item orders successfully updated."
 }

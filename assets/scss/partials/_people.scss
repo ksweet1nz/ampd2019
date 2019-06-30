@@ -1,0 +1,24 @@
+.people-item {
+  margin-top: 5em;
+  display: grid;
+  grid-template-columns: 25% minmax(0, 1fr);
+  grid-column-gap: 1.5em;
+  h2 {
+    padding: 0;
+  }
+  h3 {
+    font-style: italic;
+  }
+  @media all and (max-width: 650px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.profile-pic {
+  img {
+    max-width: 87%;
+    border: 1px solid lighten($popColor, 30%);
+    opacity: 0.8;
+    padding: 7%;
+  }
+}

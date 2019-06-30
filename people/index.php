@@ -3,21 +3,15 @@
 <!doctype html>
 <html lang="en">
 <?php perch_layout('global/head', [
-  'title' => 'AMPD | About Us',
+  'title' => 'AMPD | People',
 ]); ?>
 <body>
 
 	<?php perch_layout('global/home-menu', [
     'menu-class' => 'main-nav',
   ]); ?>
-  	<div class="wrapper">
-		<div>
-			<video autoplay loop>
-				<source src="../assets/images/about.webm" type="video/webm">
-				Please upgrade your browser to watch videos.
-			</video>
-		</div>
-		<?php perch_content('Mission'); ?>
+  <div class="wrapper">
+		<?php perch_content('People'); ?>
 	</div>
 
 <?php perch_layout('global/footer'); ?>

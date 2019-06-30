@@ -2,9 +2,10 @@
 <div class="<?php perch_layout_var('menu-class'); ?>">
   <ul>
     <a href="/"><li>Home</li></a>
+    <a href="/news/"><li>News</li></a>
     <a href="/projects/"><li>Projects</li></a>
-	<a href="#"><li>People</li></a>
-	<a href="/about/"><li>About</li></a>
+    <a href="/people/"><li>People</li></a>
+    <a href="/about/"><li>About</li></a>
     <!--<div class="dropdown">
       <button class="drop-button">Research</button>
       <div class="dropdown-menu">

@@ -11,10 +11,18 @@ body {
   color: $mainTextColor;
 }
 
+a {
+  color: lighten($popColor, 30%);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .about-main {
   background-color: $popColor;
 }
 
-hr.news {
+hr {
   border: 1px solid lighten($popColor, 30%);
 }

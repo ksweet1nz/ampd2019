@@ -1,11 +1,9 @@
+<section class="news-item">
 <h2><perch:content id="heading" type="text" label="Heading" required title></h2>
 <p class="date"><perch:content id="date" type="date" label="Date" format="%d %B %Y" required></p>
 <hr class="news">
 <perch:content id="body" type="textarea" label="Body" markdown editor="simplemde" required imagewidth="800">
-<hr class="news">
-<p class="vcard">
-    &copy; <perch:content id="date" type="date" label="Date" format="Y">
-</p>
+</section>
 
 <perch:after>
   <perch:if exists="paging">
